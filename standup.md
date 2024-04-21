@@ -3,7 +3,9 @@
 ## Overview
 
 **Meeting Facilitator:** [Person 1]
+<br>
 **Date:** [mm/dd/yy]
+<br>
 **Attendees**: 
 
 <ol>
@@ -19,7 +21,7 @@
 ## Team Update
 | Members    | Updates | Action Items | Notes |
 | -------- | ------- | ------- | ------- |
-| [Person 1]  | [Update]   | [] Action Item | <ul> <li> ... </li> <li> ... </li> </ul> | 
-| [Person 2]  | [Update]   | [] Action Item | <ul> <li> ... </li> <li> ... </li> </ul> | 
-| [Person 3]  | [Update]   | [] Action Item | <ul> <li> ... </li> <li> ... </li> </ul> | 
+| [Person 1]  | [Update]   | [ ] Action Item | <ul> <li> ... </li> <li> ... </li> </ul> | 
+| [Person 2]  | [Update]   | [ ] Action Item | <ul> <li> ... </li> <li> ... </li> </ul> | 
+| [Person 3]  | [Update]   | [ ] Action Item | <ul> <li> ... </li> <li> ... </li> </ul> | 
 
