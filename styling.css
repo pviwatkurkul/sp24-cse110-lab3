@@ -79,7 +79,7 @@
     /* Italics text */
     .rainbow em {
         animation: rainbow 2s ease-in-out infinite;
-        color: color(hsl(307, 33%, 69%) srgb); /* Set color of italicized text */
+        color: color(from hsl(307, 33%, 69%) srgb); /* Set color of italicized text */
     }
 
     
