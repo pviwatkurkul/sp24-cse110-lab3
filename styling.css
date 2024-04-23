@@ -1,6 +1,6 @@
 @media screen and (min-width : 500px) {
     .container {
-        --main-bg-color: cornflowerblue;
+        --main-bg-color: color-mix(in lch, rgb(210, 93, 210), rgb(224, 107, 127));
       }
     @font-face {
         font-family: 'Barlow Condensed';
@@ -10,7 +10,7 @@
             url('assets/fonts/BarlowCondensed-SemiBold.woff') format('woff'),
             url('assets/fonts/BarlowCondensed-SemiBold.ttf') format('truetype'),
             url('assets/fonts/BarlowCondensed-SemiBold.svg#BarlowCondensed-Black') format('svg');
-        font-weight:600px;
+        font-weight: 600;
         font-style: normal;
         font-display: swap;
     }
@@ -79,7 +79,7 @@
     /* Italics text */
     .rainbow em {
         animation: rainbow 2s ease-in-out infinite;
-        color: #ffc300; /* Set color of italicized text */
+        color: color(from hsl(307, 33%, 69%) srgb r g b); /* Set color of italicized text */
     }
 
     
@@ -102,44 +102,43 @@
     .form{
         display:grid;
         color: #8338ec;
-        background-color: color(from hsl(307, 33%, 69%) srgb r g b);
+        background-color: violet;
         border-radius: 20px;
         margin: 2em 2em 2em 2em;
-        & input[type=text]{
+        &input[type=text]{
             position: relative;
             bottom: 0.3rem;
             border-radius: 25px;
             border-color: none;
             border-width:10px;
             border: none;
-            
         }
-        & input[type=date]{
+        &input[type=date]{
             position: relative;
             bottom: 0.3rem;
             border-radius: 25px;
             border-color: none;
             border: none;
         }
-        & input[type=radio]{
+        &input[type=radio]{
             margin-right: 8px;
         }
-        & #question{
+        &#question{
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        & #button1{
+        &#button1{
             color:red;
         }
-        & #button2{
+        &#button2{
             color:rgb(255, 255, 0);
         }
-        & #button3{
+        &#button3{
             color:rgb(25, 218, 25)
         }
     }
     fieldset{
-        border-color: color-mix(in lch, plum, pink);
+        border-color: rgb(212, 128, 212)
         border-style: dashed solid;
         border-radius: 20px;
     }
