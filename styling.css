@@ -1,0 +1,81 @@
+@media screen and (min-width : 500px) {
+    /* @font-face {
+        font-family: Oswald;
+        src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUJiZTaR.woff2);
+    } */
+    body{
+        background-color: rgba(28, 97, 92, 0.688);
+
+    }
+    .navbar{
+        width: 100%;
+        height: 5vh;
+        padding: 0;
+        margin:0;
+        display:inline-block
+    }
+    .nav-text{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        text-align:right;
+        padding:40px;
+    }
+    #1{
+        color-ad
+    }
+    .nav-text > ul{
+        display:inline-block;
+    }
+    .nav-text a{
+        text-decoration: none;
+        color: rgba(69, 123, 157);
+        text-align:left;
+        
+    }
+
+    .nav-text a:hover{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-align:left;
+        
+    }
+    .rainbow {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        font-family: "Oswald", sans-serif;
+        background: linear-gradient(to right, crimson, rgb(0, 57, 245), rgb(13, 255, 0), rgb(128, 0, 255));
+        background-size: 200% 200%;
+        animation: rainbow 2s ease-in-out infinite;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
+        display: block;
+        transition: color 0.2s ease-in-out;
+        font-weight: 800;
+    }
+
+    /* Italics text */
+    .rainbow em {
+        animation: rainbow 2s ease-in-out infinite;
+        color: #ffc300; /* Set color of italicized text */
+    }
+   
+
+
+    @keyframes rainbow {
+        0% {
+            background-position: left;
+        }
+        50% {
+            background-position: right;
+        }
+        100% {
+            background-position: left;
+        }
+    }
+
+}
+
