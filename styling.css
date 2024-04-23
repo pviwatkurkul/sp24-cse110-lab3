@@ -79,7 +79,7 @@
     /* Italics text */
     .rainbow em {
         animation: rainbow 2s ease-in-out infinite;
-        color: color(from hsl(307, 33%, 69%) srgb r g b); /* Set color of italicized text */
+        color: color(hsl(307, 33%, 69%) srgb); /* Set color of italicized text */
     }
 
     
@@ -138,7 +138,7 @@
         }
     }
     fieldset{
-        border-color: rgb(212, 128, 212)
+        border-color: rgb(212, 128, 212);
         border-style: dashed solid;
         border-radius: 20px;
     }
