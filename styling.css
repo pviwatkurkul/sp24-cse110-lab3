@@ -191,3 +191,196 @@
     }
 }
 
+@media screen and (min-width : 100px) {
+    .container {
+        --main-bg-color: color-mix(in lch, rgb(210, 93, 210), rgb(224, 107, 127));
+      }
+    @font-face {
+        font-family: 'Barlow Condensed';
+        src: url('assets/fonts/BarlowCondensed-SemiBold.eot');
+        src: url('assets/fonts/BarlowCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+            url('assets/fonts/BarlowCondensed-SemiBold.woff2') format('woff2'),
+            url('assets/fonts/BarlowCondensed-SemiBold.woff') format('woff'),
+            url('assets/fonts/BarlowCondensed-SemiBold.ttf') format('truetype'),
+            url('assets/fonts/BarlowCondensed-SemiBold.svg#BarlowCondensed-Black') format('svg');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    * h3{
+        text-decoration: underline;
+        color:hsl(276, 71%, 67%);
+    }
+    body{
+        background-color: rgba(248, 145, 145, 0.688);
+        font-family: 'Barlow Condensed';
+        font-size:30px;
+        height:100%;
+        width:100%;
+    }
+    .navbar{
+        width:99%;
+        height: 5vh; 
+        margin:0;
+        display:inline-block;
+        margin-top: -20px;
+        position:static;
+        padding-top:2px;
+        padding-right:2px;
+        padding-left:2px;
+        padding-bottom: 0px;
+    }
+    .nav-text{
+        font-style: normal;
+        text-align:right;
+    }
+    .nav-text > ul{
+        display:inline-block;
+        font-size: 20px;
+    }
+    ul.unord_list1 > li:active{
+        box-shadow: 2px 2px 5px #fc894d;
+    }
+    .nav-text a{
+        text-decoration: none;
+        text-align:left;
+        color: white;
+        
+    }
+
+    .nav-text a:hover{
+        text-decoration: none;
+        color: rgba(69, 123, 157);
+        font-size: 20px;
+        text-align:left;
+        
+    }
+    .rainbow {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        background: linear-gradient(to right, crimson, rgb(0, 57, 245), rgb(13, 255, 0), rgb(128, 0, 255));
+        background-size: 200% 200%;
+        animation: rainbow 2s ease-in-out infinite;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
+        display: block;
+        transition: color 0.2s ease-in-out;
+        font-size:8vh;
+    }
+
+    /* Italics text */
+    .rainbow em {
+        animation: rainbow 2s ease-in-out infinite;
+        color: color(from hsl(307, 33%, 69%) srgb); /* Set color of italicized text */
+    }
+
+    
+    @keyframes rainbow {
+        0% {
+            background-position: left;
+        }
+        50% {
+            background-position: right;
+        }
+        100% {
+            background-position: left;
+        }
+    }
+
+    .header, .sub-section{
+        font-size:20px;
+    }
+
+    .form{
+        display:grid;
+        color: #8338ec;
+        background-color: violet;
+        border-radius: 20px;
+        margin: 2em 2em 2em 2em;
+        &input[type=text]{
+            position: relative;
+            bottom: 0.3rem;
+            border-radius: 25px;
+            border-color: none;
+            border-width:10px;
+            border: none;
+        }
+        &input[type=date]{
+            position: relative;
+            bottom: 0.3rem;
+            border-radius: 25px;
+            border-color: none;
+            border: none;
+        }
+        &input[type=radio]{
+            margin-right: 8px;
+        }
+        &#question{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &#button1{
+            color:red;
+        }
+        &#button2{
+            color:rgb(255, 255, 0);
+        }
+        &#button3{
+            color:rgb(25, 218, 25)
+        }
+    }
+    fieldset{
+        border-color: rgb(212, 128, 212);
+        border-style: dashed solid;
+        border-radius: 20px;
+    }
+    section #Meeting-Notes{
+        color: var(--main-bg-color,black);
+    }
+    #main-body{
+        font-size: 34pt;
+    }
+    .main-body{
+        font-size: 0.529cm;
+    }
+
+    #main-points{
+        font-size: 30px;
+    }
+    details{
+        margin-left: 1px;
+        margin-bottom: 20px;
+    }
+    footer{
+        margin:auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+    footer:has(~p){
+        color:teal;
+        padding:0;
+        margin:0;
+        margin-block-start: 0px;
+    }
+    footer > video{
+        max-height: 50vh;
+        max-width: 50vw;
+
+    }
+    video + audio{
+        padding:10px 10px 10px 10px;
+    }
+    audio{
+        max-height: 30rem;
+        max-width: 30rem;
+    }
+    footer ~ p{
+        padding:0;
+        margin: 0;
+    }
+}
+
